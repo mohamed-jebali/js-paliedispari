@@ -4,6 +4,7 @@
 // Palidroma
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
+
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
@@ -14,34 +15,51 @@
 // Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
 
+// PARI E DISPARI
+
+
+let numberInputUser = parseInt(prompt("Inserisci un numero tra 1 e 5"));
+
+
+
+let numberRandom = Math.floor(Math.random() * 5 + 1);
+
+
+
+
+
+
+
+
+////////////////////////////////////*
 
 // PAROLA PALINDROMA
 
 
-let inputNameUser = prompt("inserisci una parola");
+// let inputNameUser = prompt("inserisci una parola");
 
-if(isTheWordPalindrom (inputNameUser)){
-    console.log("la parola inserita è palindroma");
-}
-else{
-    console.log("la parola inserita non è palindroma");
-}
-
-
+// if(isTheWordPalindrom (inputNameUser)){
+//     console.log("la parola inserita è palindroma");
+// }
+// else{
+//     console.log("la parola inserita non è palindroma");
+// }
 
 
-function isTheWordPalindrom(checkPalindromWord){
-    let parolaInversa = '';
+
+
+// function isTheWordPalindrom(checkPalindromWord){
+//     let parolaInversa = '';
   
-    let i = checkPalindromWord.length - 1;
+//     let i = checkPalindromWord.length - 1;
   
-    while (i >= 0) {
-      parolaInversa += checkPalindromWord[i];
-      i--;
-    }
+//     while (i >= 0) {
+//       parolaInversa += checkPalindromWord[i];
+//       i--;
+//     }
 
-    return parolaInversa === checkPalindromWord;
+//     return parolaInversa === checkPalindromWord;
   
-  }
+//   }
 
 ////////////////////////////////////*
