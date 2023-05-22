@@ -19,11 +19,12 @@
 
 let numberInputUser = parseInt(prompt("Inserisci un numero tra 1 e 5"));
 
-if((numberInputUser > 5) && (numberInputUser < 1)){
-    console.log("Hai inserito un numero maggiore di 5 o minore di 1 inserisci un numero valido")
+if((numberInputUser > 5) || (numberInputUser < 1)){
+    console.log("Hai inserito un numero maggiore di 5 o minore di 1 inserisci un numero valido");
 }
 else{
     console.log("hai inserito un numero rispettando il range richiesto");
+    console.log(numberInputUser);
 }
 let sum = 0;
 
