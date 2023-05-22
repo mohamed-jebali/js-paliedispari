@@ -17,7 +17,21 @@
 
 // PARI E DISPARI
 
+let oddEvenInputUser = prompt("numero dispari o pari?");
+
+if((oddEvenInputUser !== "dispari") && (oddEvenInputUser !== "pari")){
+    console.log("Opzione non valida scegli un numero dispari o pari");
+}
+else if(oddEvenInputUser === "dispari"){
+    console.log("hai scelto un numero dispari");
+}
+else{
+    console.log("hai scelto un numero pari");
+}
+
+
 let numberInputUser = parseInt(prompt("Inserisci un numero tra 1 e 5"));
+
 
 if((numberInputUser > 5) || (numberInputUser < 1) || isNaN(numberInputUser)){
     console.log("inserisci un numero valido");
