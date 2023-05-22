@@ -17,7 +17,7 @@
 
 // PARI E DISPARI
 
-let oddEvenInputUser = prompt("numero dispari o pari?");
+let oddEvenInputUser = prompt("numero dispari o pari?").toLowerCase();
 
 if((oddEvenInputUser !== "dispari") && (oddEvenInputUser !== "pari")){
     console.log("Opzione non valida scegli un numero dispari o pari");
@@ -37,43 +37,35 @@ if((numberInputUser > 5) || (numberInputUser < 1) || isNaN(numberInputUser)){
     console.log("inserisci un numero valido");
 }
 else{
-    console.log(numberInputUser);
+    console.log("l'utente ha scelto " ,numberInputUser);
 }
 
 let computerNumber = 0;
 let computerInputRandom = isNumberRandom(computerNumber);
+console.log("il computer ha generato ", computerInputRandom);
 
-console.log(computerInputRandom);
+let sum = computerInputRandom + numberInputUser;
+console.log("la somma dei numeri è ", sum);
 
-
-
-console.log(result = "il vincitore è: ")
+let result = guessOddEven(sum);
+console.log("Il vincitore è:", result);
 
 
 // FUNZIONI
 
-function guessOddEven (checkOddEven){
+function guessOddEven(checkOddEven) {
+    let sum = checkOddEven;
+  
+    if (sum % 2 !== 0) {
+      return "dispari";
 
-    let sum = 0;
-
-    for (let i = 0; i < checkOddEven.length; i++) {
-        sum += checkOddEven[i];
-      }
-
-
-    if(sum % 2 !== 0){
-        console.log("il numero è dispari");
+    } 
+    else {
+      return "pari";
     }
-    else{
-        console.log("il numero è pari");
-    }
-
-    return sum;
-}
-
-
-
-function isNumberRandom (checkRangeNumber){
+  }
+  
+function isNumberRandom (randomRange){
 
     let numberRandom = Math.floor(Math.random() * 5 + 1);
 
