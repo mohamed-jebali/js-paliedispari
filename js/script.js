@@ -19,14 +19,29 @@
 
 let numberInputUser = parseInt(prompt("Inserisci un numero tra 1 e 5"));
 
-if((numberInputUser > 5) || (numberInputUser < 1)){
-    console.log("Hai inserito un numero maggiore di 5 o minore di 1 inserisci un numero valido");
+if((numberInputUser > 5) || (numberInputUser < 1) || isNaN(numberInputUser)){
+    console.log("inserisci un numero valido");
 }
 else{
     console.log("hai inserito un numero rispettando il range richiesto");
     console.log(numberInputUser);
 }
-let sum = 0;
+
+
+function sumOdd (checkOddEven){
+
+    let sum = 0;
+
+    if(sum % 2 !== 0){
+        console.log("il numero è dispari");
+    }
+    else{
+        console.log("il numero è pari");
+    }
+
+    return sum === checkOddEven;
+}
+
 
 
 function isNumberRandom (checkRangeNumber){
