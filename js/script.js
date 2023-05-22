@@ -15,6 +15,40 @@
 // Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
 
+
+////////////////////////////////////*
+
+// PAROLA PALINDROMA
+
+
+let inputNameUser = prompt("inserisci una parola");
+
+if(isTheWordPalindrom (inputNameUser)){
+    console.log("la parola inserita è palindroma");
+}
+else{
+    console.log("la parola inserita non è palindroma");
+}
+
+
+
+
+function isTheWordPalindrom(checkPalindromWord){
+    let parolaInversa = '';
+  
+    let i = checkPalindromWord.length - 1;
+  
+    while (i >= 0) {
+      parolaInversa += checkPalindromWord[i];
+      i--;
+    }
+
+    return parolaInversa === checkPalindromWord;
+  
+  }
+
+////////////////////////////////////*
+
 // PARI E DISPARI
 
 let oddEvenInputUser = prompt("numero dispari o pari?").toLowerCase();
@@ -71,45 +105,4 @@ function isNumberRandom (randomRange){
 
     return numberRandom;
 }
-////////////////////////////////////*
-
-
-
-
-
-
-
-
-
-////////////////////////////////////*
-
-// PAROLA PALINDROMA
-
-
-// let inputNameUser = prompt("inserisci una parola");
-
-// if(isTheWordPalindrom (inputNameUser)){
-//     console.log("la parola inserita è palindroma");
-// }
-// else{
-//     console.log("la parola inserita non è palindroma");
-// }
-
-
-
-
-// function isTheWordPalindrom(checkPalindromWord){
-//     let parolaInversa = '';
-  
-//     let i = checkPalindromWord.length - 1;
-  
-//     while (i >= 0) {
-//       parolaInversa += checkPalindromWord[i];
-//       i--;
-//     }
-
-//     return parolaInversa === checkPalindromWord;
-  
-//   }
-
 ////////////////////////////////////*
