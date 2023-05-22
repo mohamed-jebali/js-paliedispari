@@ -28,9 +28,15 @@ else{
 }
 
 
-function sumOdd (checkOddEven){
+
+function guessOddEven (checkOddEven){
 
     let sum = 0;
+
+    for (let i = 0; i < checkOddEven.length; i++) {
+        sum += checkOddEven[i];
+      }
+
 
     if(sum % 2 !== 0){
         console.log("il numero è dispari");
@@ -39,7 +45,7 @@ function sumOdd (checkOddEven){
         console.log("il numero è pari");
     }
 
-    return sum === checkOddEven;
+    return sum;
 }
 
 
