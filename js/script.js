@@ -17,12 +17,24 @@
 
 // PARI E DISPARI
 
-
 let numberInputUser = parseInt(prompt("Inserisci un numero tra 1 e 5"));
 
+if((numberInputUser > 5) && (numberInputUser < 1)){
+    console.log("Hai inserito un numero maggiore di 5 o minore di 1 inserisci un numero valido")
+}
+else{
+    console.log("hai inserito un numero rispettando il range richiesto");
+}
+let sum = 0;
 
 
-let numberRandom = Math.floor(Math.random() * 5 + 1);
+function isNumberRandom (checkRangeNumber){
+
+    let numberRandom = Math.floor(Math.random() * 5 + 1);
+
+    return checkRangeNumber === numberRandom;
+}
+
 
 
 
