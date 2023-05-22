@@ -37,11 +37,20 @@ if((numberInputUser > 5) || (numberInputUser < 1) || isNaN(numberInputUser)){
     console.log("inserisci un numero valido");
 }
 else{
-    console.log("hai inserito un numero rispettando il range richiesto");
     console.log(numberInputUser);
 }
 
+let computerNumber = 0;
+let computerInputRandom = isNumberRandom(computerNumber);
 
+console.log(computerInputRandom);
+
+
+
+console.log(result = "il vincitore è: ")
+
+
+// FUNZIONI
 
 function guessOddEven (checkOddEven){
 
@@ -68,8 +77,9 @@ function isNumberRandom (checkRangeNumber){
 
     let numberRandom = Math.floor(Math.random() * 5 + 1);
 
-    return checkRangeNumber === numberRandom;
+    return numberRandom;
 }
+////////////////////////////////////*
 
 
 
